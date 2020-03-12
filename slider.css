@@ -1,0 +1,94 @@
+body {
+
+  /* couleurs changeantes */
+
+.fun-color {
+-webkit-animation: random 15s infinite;
+animation: random 15s infinite;
+}
+
+@keyframes random {
+15% { background-color: #e3ff87; } 
+30% { background-color: #ff7c96; } 
+45% { background-color: #6ffffa; }
+60% { background-color: #ef6b30; } 
+75% { background-color: #bf69b1; } 
+}
+input[type=range] {
+  -webkit-appearance: none;
+  width: 69%;
+  margin: 0px 0;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 0px;
+  cursor: pointer;
+  box-shadow: 6.2px 6.2px 3.8px #1EFF1E, 0px 0px 6.2px #0d0d0d;
+  background: rgba(30, 30, 255, 0.6);
+  border-radius: 25px;
+  border: 1.8px solid rgba(30, 30, 255, 0.6);
+}
+input[type=range]::-webkit-slider-thumb {
+  border: 7.2px solid rgba(30, 30, 255, 0.6);
+  height: 0px;
+  width: 16px;
+  border-radius: 3px;
+  background: #1EFF1E;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -1.8px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: rgba(30, 30, 255, 0.6);
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 0px;
+  cursor: pointer;
+  background: rgba(30, 30, 255, 0.6);
+  border-radius: 25px;
+  border: 1.8px solid rgba(30, 30, 255, 0.6);
+}
+input[type=range]::-moz-range-thumb {
+  border: 7.2px solid rgba(30, 30, 255, 0.6);
+  height: 0px;
+  width: 16px;
+  border-radius: 3px;
+  background: #1EFF1E;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 0px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: rgba(30, 30, 255, 0.6);
+  border: 1.8px solid rgba(230, 30, 255, 0.6);
+  border-radius: 50px;
+}
+input[type=range]::-ms-fill-upper {
+  background: rgba(30, 30, 255, 0.6);
+  border: 1.8px solid rgba(30, 30, 255, 0.6);
+  border-radius: 50px;
+}
+input[type=range]::-ms-thumb {
+  border: 7.2px solid rgba(30, 30, 255, 0.6);
+  width: 16px;
+  border-radius: 3px;
+  background: #1EFF1E;
+  cursor: pointer;
+  height: 0px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: rgba(30, 30, 255, 0.6);
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: rgba(30, 30, 255, 0.6);
+}

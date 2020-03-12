@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <!-- styles -->
+<link type="text/css" rel="stylesheet" href="https://verns.world/video.css" />
+<!-- /styles -->
+
+<!-- favicons -->
+<link rel="shortcut icon" href="https://vernsworld.neocities.org/cropped-weird-logo.png">
+<!-- /favicons -->
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="//db.onlinewebfonts.com/c/45f5fadb3dbf0140e10b498c7cb030a6?family=Canterbury" rel="stylesheet" type="text/css"/>
+<link href="//db.onlinewebfonts.com/c/6a694d806d157b8cb12b7f4576ba6c11?family=Monotype.com" rel="stylesheet" type="text/css"/>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5.js example</title>
+    <style> body {padding: 0; margin: 0;} 
+
+
+
+  </style>
+  <script type="text/javascript">
+//background change every minute
+function setbackground()
+{
+window.setTimeout( "setbackground()", 60000); // 5000 milliseconds delay
+var index = Math.round(Math.random() * 9);
+var ColorValue = "000000"; // black (index = 0)
+if(index == 1)
+ColorValue = "012980"; //dark blue
+if(index == 2)
+ColorValue = "9af01a"; //bright green
+if(index == 3)
+ColorValue = "405205"; //hunter
+if(index == 4)
+ColorValue = "320180"; //purple
+if(index == 5)
+ ColorValue = "4b5205"; //olive
+if(index == 6)
+ColorValue = "0d6601"; //dark green
+if(index == 7)
+ColorValue = "eaff00"; //chartreuse
+if(index == 8)
+ColorValue = "060552"; //darker blue
+if(index == 9)
+ColorValue = "ff3700"; //red orange
+document.getElementsByTagName("body")[0].style.backgroundColor = "#" + ColorValue;
+}
+</script>
+<body onload="setbackground();">
+    <script src="p5.js"></script>
+    <script src="p5.sound.js"></script>
+    <script src="sketch.js"></script>
+  </head>
+  <body>
+  </body>
+</html>
